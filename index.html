@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="Adolfo Antequera">
+    <meta name="description" content="Pagina de tatuajes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Adolfo Tattoo</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Menu -->
+            <menu class="menu">
+                <nav class="me-nav-1">
+                    <span class="me-nav-sp"><a href="index.html"></a></span>
+                    <div class="menu-hamburguesa">
+                        <input type="checkbox" name="" id="btn-menu">
+                        <label for="btn-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <nav class="menu-desplegable">
+                            <ul class="me-des-ul">
+                                <a id="sobreMi-1" href="#"><li>Sobre mi</li></a>
+                                <a href="#"><li>Contacto</li></a>
+                                <a href=".redes-fu"><li>Redes</li></a>
+                                <a href="galeria.html"><li>Galeria</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu-lateral">
+                        <nav class="me-la-nav">
+                            <ul class="me-la-ul">
+                                <a id="sobreMi-2" href="#"><li>Sobre mi</li></a>
+                                <a href="#"><li>Contacto</li></a>
+                                <a href="#redes"><li>Redes</li></a>
+                                <a href="galeria.html"><li>Galeria</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+                <div id="modales"></div>
+            </menu>
+        <!-- Header -->
+            <header class="header">
+                <h1 class="head-h1" data-text="Adolfo TATTOO">Adolfo TATTOO</h1>
+            </header>
+<!-- Main -->
+            <main class="main">
+<!-- Seccion 0 -->
+                <section class="seccion-0">
+                    <div class="portada">
+                        <img src="assets/img/portada-1.jpg" alt="">
+                    </div>
+                    <p class="animar-trigger">
+                        Soy tatuador con más de 10 años de experiencia
+                    </p>
+                </section>
+<!-- Seccion-1 -->
+                <section class="seccion">
+                    <div class="div-card">
+                        <div class="card">
+                            <img src="assets/img/portada-2.jpg" alt="">
+                        </div>
+                        <p class="animar-trigger">El Arte es algo que soprende y llevarlo en la piel es algo que nos identifica.</p>
+                    </div>
+                </section>
+<!-- Seccion 2 -->
+                <section class="seccion">
+                    <div class="div-card">
+                        <div class="card">
+                            <img src="assets/img/portada-3.jpg" alt="">
+                        </div>
+                        <p class="animar-trigger">Los tatujes se pueden ver como la forma de expresar algo o quizas recordar algo o a un ser querido, como un familiar o mascota, incluso algunos lo usan como tributos.</p>
+                    </div>
+                </section>
+                <div class="trabajos" id="trabajos">
+                    <h2>Trabajos</h2>
+                </div>
+            </main>
+<!-- Carrusel -->
+            
+            <div class="carrusel" id="galeria">
+                <div class="ca-div">
+                    <div class="ca-div-img"><img src="/assets/img/foto-1.jpg" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-2.jpg" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-3.png" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-4.png" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-5.jpg" alt=""></div>
+                </div>
+                <div aria-hidden class="ca-div">
+                    <div class="ca-div-img"><img src="/assets/img/foto-1.jpg" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-2.jpg" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-3.png" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-4.png" alt=""></div>
+                    <div class="ca-div-img"><img src="/assets/img/foto-5.jpg" alt=""></div>
+                </div>
+            </div>
+<!-- Footer -->
+            <footer class="footer">
+                <div class="redes-fu" id="redes">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="text-fu">
+                    <p>&copy;Todos los derechos reservados</p>
+                    <p>Adolfo Antequera</p>
+                </div>
+            </footer>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
