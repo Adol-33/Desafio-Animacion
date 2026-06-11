@@ -25,7 +25,8 @@ function observarElemento( elemento, className, tiempo=0.3, repetir=false) {
 observarElemento(".animar-trigger", "animar", 0.5);
 observarElemento(".card", "card-animacion", 0.5);
 
-// MODAL
+
+// MODAL ---------------------------------------------------------
 
 const linkSobreMiUno = document.querySelector("#sobreMi-1");
 // console.log(linkSobreMi);
@@ -52,7 +53,8 @@ linkSobreMiUno.addEventListener("click", async (e) => {
     const btnCerrar = document.querySelector("#btn-cerrar-sM");
     btnCerrar.addEventListener("click", () => modal.close());
 });
-// Menu Lateral
+
+// Menu Lateral ----------------------------------------------------
 linkSobreMiDos.addEventListener("click", async (e) => {
     e.preventDefault();
 
@@ -70,6 +72,92 @@ linkSobreMiDos.addEventListener("click", async (e) => {
     const btnCerrar = document.querySelector("#btn-cerrar-sM");
     btnCerrar.addEventListener("click", () => modal.close());
 });
+
+// redes -----------------------------------------------------------
+const modalRedes = document.querySelector('.redes-me-des');
+modalRedes.addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    const respuesta = await fetch("modal_redes.html");
+    const html = await respuesta.text();
+
+    contenedor.innerHTML = html;
+
+    const modal = document.querySelector('#modalRedes');
+    modal.showModal();
+
+    const btnCerrar = document.querySelector('#cerrarRedes');
+    btnCerrar.addEventListener("click", () => {
+        modal.close();
+        contenedor.innerHTML = '';
+    });
+
+})
+
+const modalRedesDos = document.querySelector('#redes-me-la');
+modalRedesDos.addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    const respuesta = await fetch("modal_redes.html");
+    const html = await respuesta.text();
+
+    contenedor.innerHTML = html;
+
+    const modal = document.querySelector('#modalRedes');
+    modal.showModal();
+
+    const btnCerrar = document.querySelector('#cerrarRedes');
+    btnCerrar.addEventListener("click", () => {
+        modal.close();
+        contenedor.innerHTML = '';
+    });
+
+})
+
+// contacto -------------------------------------------
+const modalContacto = document.querySelector('#contacto-me-des');
+modalContacto.addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    const respuesta = await fetch("contacto_modal.html");
+    const html = await respuesta.text();
+
+    contenedor.innerHTML = html;
+
+    const modal = document.querySelector("#modalContacto");
+    modal.showModal();
+
+    const btnCerrar = document.querySelector("#cerrarContacto");
+    btnCerrar.addEventListener("click", () => {
+        modal.close();
+        contenedor.innerHTML = '';
+    });
+});
+
+const modalContactoDos = document.querySelector('#contacto-me-la');
+modalContactoDos.addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    const respuesta = await fetch("contacto_modal.html");
+    const html = await respuesta.text();
+
+    contenedor.innerHTML = html;
+
+    const modal = document.querySelector("#modalContacto");
+    modal.showModal();
+
+    const btnCerrar = document.querySelector("#cerrarContacto");
+    btnCerrar.addEventListener("click", () => {
+        modal.close();
+        contenedor.innerHTML = '';
+    });
+});
+
+
+
+
+
+
 
 
 
