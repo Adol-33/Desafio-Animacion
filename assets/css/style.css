@@ -57,17 +57,11 @@ body {
     background-repeat: no-repeat;
 
 }
-.menu-hamburguesa {
-    
-}
 .menu-hamburguesa input {
     display: none;
 }
 .menu-hamburguesa label {
     font-size: 2em;
-}
-.menu-hamburguesa i {
-
 }
 
 /* ----- menu desplegable ---------------------------- */
@@ -80,12 +74,6 @@ body {
     background-color: rgba(0, 0, 0, .9);
     z-index: 2;
     border-radius: 4px;
-}
-.me-des-ul {
-    
-}
-.me-des-ul a {
-    
 }
 li:hover {
     color: var(--color-3);
@@ -106,16 +94,10 @@ li:hover {
 .menu-lateral {
     display: none;
 }
-.me-la-nav {
-
-}
 .me-la-ul {
     display: flex;
     flex-direction: column;
     /* gap: 4em; */
-}
-.me-la-ul a {
-
 }
 .me-la-ul li {
     font-size: 3vmin;
@@ -381,7 +363,7 @@ li:hover {
 /* ----- Escritorio ------------------------ */
 @media screen and (min-width: 992px) {
     .container {
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 350px 1fr;
         grid-template-rows: auto 1fr auto auto;
         grid-template-areas:
         "a b"
@@ -436,9 +418,8 @@ li:hover {
     }
     
     /* ----- MAIN ------------------------ */
-    .main {
-        
-    }
+
+
     /* ----- seccion 0 ------------------------ */
     .seccion-0 {
         height: auto;
@@ -450,20 +431,9 @@ li:hover {
     }
     .portada {
         width: clamp(30%, 70%, 100%);
-        /* max-height: 100%; */
-        /* order: 2; */
     }
     .card {
         width: clamp(30%, 100%, 100%);
-        /* max-height: 100%; */
-    }
-    .animar {
-        /* align-self: center; */
-        
-    }
-    .div-card-p {
-        
-        
     }
     /* ----- seccion  ------------------------ */
     .seccion {
@@ -484,8 +454,6 @@ li:hover {
     }
     .ca-div-img {
         flex: 0 0 20em;
-        /* width: 20em;
-        height: 20em; */
         display: flex;
         align-items: center;
         text-align: center;
